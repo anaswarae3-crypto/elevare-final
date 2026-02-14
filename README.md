@@ -13,7 +13,7 @@
 ]
 
 ### Hosted Project Link
-[mention your project hosted link here]
+[]
 
 ### Project Description
 [we create a student mental stress uplift platform where student can interact without any fear of judgement]
