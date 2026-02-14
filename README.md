@@ -2,27 +2,30 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
-
+#elevare
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: [KAAD]
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: [KEERTHANA SHAJI] - [LBS INSTITUTE OF TECHNOLOGY POOIAPURA]
+- Member 2: [ANASWARA E] - [ LBS INSTITUTE OF TECHNOLOGY POOJAPURA]
+]
 
 ### Hosted Project Link
 [mention your project hosted link here]
 
 ### Project Description
-[2-3 lines about what your project does]
+[we create a student mental stress uplift platform where student can interact without any fear of judgement]
 
 ### The Problem statement
-[What problem are you solving?]
+[digital platform designed to uplift minds]
 
 ### The Solution
-[How are you solving it?]
+[user enters website/loginin
+level1:chat with AI
+level2:stress relief hub
+level3:counselt with professionals(certified)]
 
 ---
 
@@ -31,25 +34,21 @@
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
+- Languages used: [e.g., JavaScript, html,css]
 - Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
+- Tools used: [e.g., VS Code, Git, chatgpt,grok]
 
-**For Hardware:**
-- Main components: [List main components]
-- Specifications: [Technical specifications]
-- Tools required: [List tools needed]
+
 
 ---
 
 ## Features
 
 List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+- Feature 1: [user friendly]
+- Feature 2: [easily accesible]
+- Feature 3: [budget friendly]
+- Feature 4: [guidance]
 
 ---
 
@@ -83,10 +82,12 @@ List the key features of your project:
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1](Add screenshot 1 here with proper name)
+![Screenshot1](Add screenshot 1 <img width="1080" height="676" alt="Screenshot 2026-02-14 at 08 35 39" src="https://github.com/user-attachments/assets/508027f7-1bfe-4c0d-a8b1-02af2fb0d6cd" />
+ login page
 *Add caption explaining what this shows*
 
-![Screenshot2](Add screenshot 2 here with proper name)
+![<img width="1080" height="676" alt="Screenshot 2026-02-14 at 08 41 34" src="https://github.com/user-attachments/assets/6c9f5cbc-5cec-4324-afd8-daebac122d95" />
+](chatting with ai chat bot)
 *Add caption explaining what this shows*
 
 ![Screenshot3](Add screenshot 3 here with proper name)
@@ -296,8 +297,7 @@ python script.py -v input.txt
 python script.py -o output.txt input.txt
 
 # Example 4: Using configuration
-python script.py -c config.json --verbose input.txt
-```
+python script.py -c config.
 
 #### Demo Output
 
@@ -361,59 +361,10 @@ python script.py -v --format json data.json
 ## Project Demo
 
 ### Video
-[Add your demo video link here - YouTube, Google Drive, etc.]
+[Add your demo video link [here](https://share.icloud.com/photos/013F0MW5Y3WqekxRNgp2W00-Q) - YouTube, Google Drive, etc.]
 
 *Explain what the video demonstrates - key features, user flow, technical highlights*
 
-### Additional Demos
-[Add any extra demo materials/links - Live site, APK download, online demo, etc.]
 
----
-
-## AI Tools Used (Optional - For Transparency Bonus)
-
-If you used AI tools during development, document them here for transparency:
-
-**Tool Used:** [e.g., GitHub Copilot, v0.dev, Cursor, ChatGPT, Claude]
-
-**Purpose:** [What you used it for]
-- Example: "Generated boilerplate React components"
-- Example: "Debugging assistance for async functions"
-- Example: "Code review and optimization suggestions"
-
-**Key Prompts Used:**
-- "Create a REST API endpoint for user authentication"
-- "Debug this async function that's causing race conditions"
-- "Optimize this database query for better performance"
-
-**Percentage of AI-generated code:** [Approximately X%]
-
-**Human Contributions:**
-- Architecture design and planning
-- Custom business logic implementation
-- Integration and testing
-- UI/UX design decisions
-
-*Note: Proper documentation of AI usage demonstrates transparency and earns bonus points in evaluation!*
-
----
-
-## Team Contributions
-- [Name 1]: [Specific contributions - e.g., Frontend development, API integration, etc.]
-- [Name 2]: [Specific contributions - e.g., Backend development, Database design, etc.]
-- [Name 3]: [Specific contributions - e.g., UI/UX design, Testing, Documentation, etc.]
-
----
-
-## License
-
-This project is licensed under the [LICENSE_NAME] License - see the [LICENSE](LICENSE) file for details.
-
-**Common License Options:**
-- MIT License (Permissive, widely used)
-- Apache 2.0 (Permissive with patent grant)
-- GPL v3 (Copyleft, requires derivative works to be open source)
-
----
 
 Made with ❤️ at TinkerHub
