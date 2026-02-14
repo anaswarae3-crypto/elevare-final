@@ -1,0 +1,41 @@
+/* COMMON */
+body { margin:0; font-family: Arial; background: linear-gradient(to right,#a8edea,#fed6e3);}
+.section { display:none; padding:20px; min-height:100vh; }
+.active-section { display:block; }
+.container { max-width:900px; margin:auto; background:white; padding:25px; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.2); }
+button { cursor:pointer; border:none; border-radius:8px; padding:10px 15px; font-size:16px; }
+.primary { background:#6c63ff; color:white; }
+.primary:hover { background:#574bdb; }
+.success { background:#28a745; color:white; }
+.danger { background:#dc3545; color:white; }
+input, textarea { width:100%; padding:10px; margin:8px 0; border-radius:8px; border:1px solid #ccc; }
+input:focus, textarea:focus { outline:none; border-color:#6c63ff; }
+
+/* CHAT */
+.chat-box { background:#f4f4f4; padding:10px; height:250px; overflow-y:auto; border-radius:8px; margin-bottom:10px; }
+.message { margin:5px 0; padding:8px; border-radius:10px; max-width:80%; }
+.user { background:#d1e7dd; align-self:flex-end; }
+.bot { background:#f1f1f1; align-self:flex-start; }
+.input-area { display:flex; }
+.input-area input { flex:1; padding:8px; }
+.input-area button { margin-left:8px; }
+
+/* BREATHING */
+.circle { width:120px; height:120px; border-radius:50%; background:#6c63ff; margin:10px auto; animation:breathe 6s infinite; }
+@keyframes breathe {0%{transform:scale(1);}50%{transform:scale(1.4);}100%{transform:scale(1);}}
+
+/* ACTIVITIES */
+.game-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:10px; }
+.game { background:#f4f6ff; padding:15px; text-align:center; border-radius:10px; cursor:pointer; }
+
+/* COUNSELLOR */
+.counsellor-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:15px; }
+.card { background:white; padding:15px; border-radius:12px; text-align:center; }
+
+/* STARS */
+.stars { display:flex; justify-content:center; margin:20px 0; }
+.stars span { font-size:35px; cursor:pointer; color:#ccc; transition:0.3s; }
+.stars span.active { color:gold; }
+
+/* THANK YOU */
+.thankyou-box { text-align:center; padding:40px; border-radius:20px; box-shadow:0 15px 30px rgba(0,0,0,0.2); }
