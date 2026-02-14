@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MindEase – Student Stress Relief App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN SECTION -->
+<div id="login" class="section active-section">
+    <div class="container">
+        <h2>MindEase Sign Up</h2>
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email Address" required>
+        <input type="tel" id="phone" placeholder="Contact Number" pattern="[0-9]{10}" required>
+        <input type="password" id="password" placeholder="Strong Password" required>
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+        <div><input type="checkbox" id="terms" required> I agree to Privacy Policy & Terms</div>
+        <div id="errorMsg" class="error"></div>
+        <button class="primary" onclick="signup()">Create Account</button>
+    </div>
+</div>
+
+<!-- LEVEL 1 SECTION -->
+<div id="level1" class="section">
+    <div class="container">
+        <h2>Level 1 – AI Emotional Support 🤍</h2>
+        <div id="chatBox" class="chat-box">
+            <div class="message bot">Hello 😊 I’m here to listen. Tell me how you’re feeling today.</div>
+        </div>
+        <button id="level2Btn" class="primary" style="display:none;" onclick="showSection('level2')">Move to Level 2 🧠</button>
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Type your problem...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</div>
+
+<!-- LEVEL 2 SECTION -->
+<div id="level2" class="section">
+    <div class="container">
+        <h2>Level 2 – Relax & Recharge 🌿</h2>
+        <div class="breathing">
+            <p>Guided Breathing Meditation</p>
+            <div class="circle"></div>
+            <p>Breathe in as the circle grows, breathe out as it shrinks.</p>
+        </div>
+        <div class="activities">
+            <p>Mood-Boosting Activities:</p>
+            <div class="game-list">
+                <div class="game">🍬 Candy Crush</div>
+                <div class="game">🐾 Animal Crossing</div>
+                <div class="game">🔤 Word Search</div>
+                <div class="game">🧩 Puzzle Game</div>
+            </div>
+        </div>
+        <div class="check">
+            <p>How are you feeling now?</p>
+            <button class="success" onclick="alert('Great! Keep practicing these activities 💚')">I feel better 😊</button>
+            <button class="danger" onclick="document.getElementById('level3Btn').style.display='inline-block'">Still not okay 😔</button>
+            <button id="level3Btn" class="primary" style="display:none;" onclick="showSection('level3')">Move to Level 3 🤍</button>
+        </div>
+    </div>
+</div>
+
+<!-- LEVEL 3 SECTION -->
+<div id="level3" class="section">
+    <div class="container">
+        <h2>Level 3 – Human Counsellor 🤍</h2>
+        <div class="counsellor-grid">
+            <div class="card">
+                <h3>Dr. Ameena Sithara</h3>
+                <p>Email: sithara@gmail.com</p>
+                <p>Fee: ₹3150</p>
+                <button class="primary" onclick="selectCounsellor('Dr. Ameena Sithara','3150')">Book Session</button>
+            </div>
+            <div class="card">
+                <h3>Ashna Sunil</h3>
+                <p>Email: ashna55@gmail.com</p>
+                <p>Fee: ₹130</p>
+                <button class="primary" onclick="selectCounsellor('Ashna Sunil','130')">Book Session</button>
+            </div>
+            <div class="card">
+                <h3>Ben Joseph</h3>
+                <p>Email: joseph990@gmail.com</p>
+                <p>Fee: ₹170</p>
+                <button class="primary" onclick="selectCounsellor('Ben Joseph','170')">Book Session</button>
+            </div>
+            <div class="card">
+                <h3>Fathima S</h3>
+                <p>Email: fathima90@gmail.com</p>
+                <p>Fee: ₹239</p>
+                <button class="primary" onclick="selectCounsellor('Fathima S','239')">Book Session</button>
+            </div>
+            <div class="card">
+                <h3>Alan Joseph</h3>
+                <p>Email: joseph22@gmail.com</p>
+                <p>Fee: ₹120</p>
+                <button class="primary" onclick="selectCounsellor('Alan Joseph','120')">Book Session</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PAYMENT SECTION -->
+<div id="payment" class="section">
+    <div class="container">
+        <h2>Google Pay</h2>
+        <p id="paymentDetails"></p>
+        <button class="success" onclick="completePayment()">Pay Now</button>
+    </div>
+</div>
+
+<!-- SESSION SECTION -->
+<div id="session" class="section">
+    <div class="container">
+        <h2 id="sessionHeader">Live Counselling Session 🤍</h2>
+        <div class="video-section">🎥 Video Call Connected (Demo)</div>
+        <div id="chatSession" class="chat-box"></div>
+        <div class="input-area">
+            <input type="text" id="sessionMsg" placeholder="Type your message...">
+            <button onclick="sendSessionMessage()">Send</button>
+        </div>
+    </div>
+</div>
+
+<!-- FEEDBACK SECTION -->
+<div id="feedback" class="section">
+    <div class="container">
+        <h2>Rate Your Experience 🌟</h2>
+        <div class="stars" id="stars">
+            <span onclick="rate(1)">★</span>
+            <span onclick="rate(2)">★</span>
+            <span onclick="rate(3)">★</span>
+            <span onclick="rate(4)">★</span>
+            <span onclick="rate(5)">★</span>
+        </div>
+        <textarea id="feedbackText" placeholder="Write your feedback (optional)"></textarea>
+        <button class="success" onclick="submitFeedback()">Submit Feedback</button>
+        <div id="thanks" class="thanks">Thank you for your feedback 💚</div>
+    </div>
+</div>
+
+<!-- THANK YOU SECTION -->
+<div id="thankyou" class="section">
+    <div class="thankyou-box">
+        <h1>Thank You 💚</h1>
+        <p>Your mental health matters. Thank you for trusting MindEase. 🌿</p>
+        <button class="danger" onclick="logout()">Logout</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
